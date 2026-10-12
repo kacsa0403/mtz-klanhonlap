@@ -70,9 +70,8 @@ nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classLi
 document.getElementById('year').textContent=new Date().getFullYear();
 document.getElementById('applyForm').addEventListener('submit',e=>{
  e.preventDefault();
- const contact='magyartankzuzok@gmail.com';
- if(contact==='magyartankzuzok@gmail.com'){
-   document.getElementById('formStatus').textContent='A jelentkezési űrlap működik, de előbb állítsd be a kapcsolattartó e-mail-címét az index.html fájl JavaScript részében.';
+ const contact='magyartankzuzok@gmail.com';{
+   document.getElementById('formStatus').textContent='A jelentkezési űrlap működik.';
    return;
  }
  const d=new FormData(e.target);
