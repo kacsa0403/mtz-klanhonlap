@@ -72,7 +72,7 @@ document.getElementById('applyForm').addEventListener('submit',e=>{
  e.preventDefault();
  const contact='magyartankzuzok@gmail.com';{
    document.getElementById('formStatus').textContent='A jelentkezési űrlap működik.';
-   return;
+   ;
  }
  const d=new FormData(e.target);
  const subject=encodeURIComponent('MTZ klán jelentkezés – '+d.get('player'));
