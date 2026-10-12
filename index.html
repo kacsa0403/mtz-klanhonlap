@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101417">
+<meta name="description" content="MTZ – Magyar Tank Zúzók. World of Tanks EU klán. Csapat, fejlődés, győzelem.">
+<title>MTZ | Magyar Tank Zúzók</title>
+<style>
+:root{--bg:#0b0e10;--panel:#14191d;--steel:#aab3b8;--muted:#a7b0b6;--orange:#f07824;--line:#30383d;--white:#f2f3f3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}button,input,textarea{font:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(8,11,13,.94);backdrop-filter:blur(10px);border-bottom:1px solid #394147}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.emblem{width:46px;height:46px;display:grid;place-items:center;border:2px solid var(--orange);transform:rotate(45deg);font-weight:900;color:var(--orange);font-size:19px}.emblem span{transform:rotate(-45deg)}.brand strong{font-size:26px;letter-spacing:3px;line-height:1}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.7px;margin-top:4px}
+nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;color:#d8dcde;font-size:13px}nav a:hover{color:var(--orange)}.menu{display:none;background:none;color:white;border:1px solid var(--line);padding:7px 10px}
+.hero{position:relative;min-height:540px;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,rgba(5,8,10,.97),rgba(5,8,10,.72) 48%,rgba(5,8,10,.25)),linear-gradient(0deg,#0b0e10 0%,transparent 28%),url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=2000&q=85') center/cover}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.018) 4px 5px)}
+.hero-content{position:relative;z-index:1;padding:70px 0;max-width:670px}.eyebrow{color:var(--orange);font-weight:800;font-size:12px;letter-spacing:3px;text-transform:uppercase}.hero h1{font-size:clamp(64px,10vw,116px);line-height:.88;letter-spacing:-4px;margin:18px 0 12px;text-shadow:0 4px 30px #000}.hero h1 span{display:block;font-size:clamp(18px,3vw,29px);letter-spacing:5px;color:#cbd0d3;margin-top:18px}.hero p{font-size:19px;color:#d2d8db;max-width:520px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-block;text-decoration:none;font-weight:800;font-size:12px;letter-spacing:.8px;padding:13px 20px;border:1px solid var(--orange);background:var(--orange);color:#161616;cursor:pointer}.btn:hover{filter:brightness(1.12)}.btn.secondary{background:transparent;color:white;border-color:#7c878d}
+.pillars{border-block:1px solid var(--line);background:#101518}.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:22px 0}.pillar{display:flex;gap:14px;align-items:center}.symbol{font-size:26px;color:var(--orange)}.pillar b{display:block;font-size:13px;letter-spacing:1px}.pillar small{color:var(--muted)}
+section{padding:74px 0;border-bottom:1px solid #252d31}.section-head{margin-bottom:26px}.section-head small{color:var(--orange);font-weight:800;letter-spacing:2px;text-transform:uppercase}.section-head h2{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:7px 0 0;text-transform:uppercase}.about-grid{display:grid;grid-template-columns:1fr .8fr;gap:50px;align-items:center}.about p{color:#c0c8cc}.crest{min-height:260px;display:grid;place-items:center;background:radial-gradient(ellipse,rgba(240,120,36,.15),transparent 60%),linear-gradient(135deg,#161c20,#090b0d);border:1px solid var(--line);position:relative;overflow:hidden}.crest:before{content:"MTZ";font-size:clamp(76px,12vw,130px);font-weight:1000;letter-spacing:-6px;color:#b9c0c4;text-shadow:3px 4px #3c4449,-1px -1px #fff}.crest:after{content:"MAGYAR TANK ZÚZÓK • EU";position:absolute;bottom:25px;letter-spacing:3px;font-size:11px;color:var(--orange)}
+.stats{background:linear-gradient(90deg,rgba(9,12,14,.97),rgba(9,12,14,.86)),url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1800&q=80') center/cover}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{border:1px solid var(--line);background:rgba(14,18,21,.8);padding:22px 14px;text-align:center}.stat strong{display:block;font-size:27px;color:var(--orange)}.stat span{font-size:12px;color:#c5cdd1}.notice{color:#aeb8bd;font-size:12px;margin-top:15px}
+.members-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.member{padding:22px 16px;background:linear-gradient(145deg,#171d21,#0d1012);border:1px solid var(--line);text-align:center}.rank{font-size:28px;color:var(--orange)}.member h3{font-size:15px;margin:8px 0 0}.member p{font-size:12px;color:var(--muted);margin:4px 0 0}
+.recruit{background:linear-gradient(110deg,rgba(7,10,12,.96),rgba(7,10,12,.82)),url('https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1800&q=80') center/cover}.recruit-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}.checklist{padding:0;list-style:none;color:#d1d7da}.checklist li{margin:10px 0}.checklist li:before{content:"✓";color:#a8d64a;font-weight:900;margin-right:10px}.form{display:grid;gap:12px;background:rgba(14,18,21,.88);border:1px solid var(--line);padding:22px}.form label{font-size:12px;color:#cbd2d6}.form input,.form textarea{width:100%;padding:11px;background:#090c0e;color:white;border:1px solid #3a444a;outline:none}.form input:focus,.form textarea:focus{border-color:var(--orange)}.form textarea{min-height:95px;resize:vertical}.form-note{font-size:12px;color:var(--muted);margin:0}
+footer{padding:28px 0;color:var(--muted);font-size:12px}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.foot strong{color:white;letter-spacing:2px}
+@media(max-width:760px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:#0b0e10;padding:18px 4%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}nav.open{display:flex}.menu{display:block}.hero{min-height:480px}.hero h1{letter-spacing:-2px}.pillar-grid{grid-template-columns:1fr}.about-grid,.recruit-grid{grid-template-columns:1fr;gap:25px}.stats-grid{grid-template-columns:repeat(2,1fr)}.members-grid{grid-template-columns:repeat(2,1fr)}section{padding:54px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><div class="emblem"><span>MTZ</span></div><div><strong>MTZ</strong><small>Magyar Tank Zúzók</small></div></a>
+<button class="menu" id="menuBtn" aria-label="Menü megnyitása" aria-expanded="false">☰ Menü</button>
+<nav id="nav"><a href="#home">Főoldal</a><a href="#about">A klánról</a><a href="#stats">Statisztikák</a><a href="#members">Tagok</a><a href="#recruit">Toborzás</a></nav>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-content">
+<div class="eyebrow">World of Tanks • EU szerver</div><h1>MTZ<span>MAGYAR TANK ZÚZÓK</span></h1>
+<p>Csaták. Csapattársak. Győzelem. Egy klán, ahol együtt fejlődünk, együtt harcolunk, és együtt írjuk a történetünket.</p>
+<div class="actions"><a class="btn" href="#recruit">CSATLAKOZZ HOZZÁNK ↗</a><a class="btn secondary" href="#about">ISMERJ MEG MINKET</a></div>
+</div></div></section>
+<div class="pillars"><div class="wrap pillar-grid">
+<div class="pillar"><div class="symbol">⬡</div><div><b>KÖZÖSSÉG</b><small>Egy csapat, egy cél.</small></div></div>
+<div class="pillar"><div class="symbol">⚙</div><div><b>FEJLŐDÉS</b><small>Tanulunk minden csatából.</small></div></div>
+<div class="pillar"><div class="symbol">♜</div><div><b>GYŐZELEM</b><small>Fegyelem, taktika, összhang.</small></div></div>
+</div></div>
+<section id="about"><div class="wrap about-grid"><div class="about"><div class="section-head"><small>A klánról</small><h2>Magyar Tank Zúzók</h2></div>
+<p>Az <strong>MTZ</strong> egy magyar World of Tanks klán az EU szerveren. Olyan közösséget építünk, ahol a jó hangulat, a csapatjáték és a fejlődés egyaránt fontos.</p>
+<p>Legyen szó random csatákról, szakaszozásról vagy szervezett klánprogramokról, a célunk egyszerű: játsszunk együtt, segítsük egymást, és hozzuk ki a legtöbbet minden csatából.</p>
+<p><strong>Játék. Fejlődés. Közösség. MTZ!</strong></p><a class="btn secondary" href="#recruit">JELENTKEZÉS ↗</a></div><div class="crest" role="img" aria-label="MTZ Magyar Tank Zúzók embléma"></div></div></section>
+<section class="stats" id="stats"><div class="wrap"><div class="section-head"><small>Klán adatok</small><h2>Statisztikák</h2></div><div class="stats-grid">
+<div class="stat"><strong>EU</strong><span>Szerver</span></div><div class="stat"><strong>MTZ</strong><span>Klántag</span></div><div class="stat"><strong>—</strong><span>Győzelmi arány</span></div><div class="stat"><strong>—</strong><span>Aktív játékosok</span></div>
+</div><p class="notice">A „—” jelölésű adatok szándékosan üresek: a valós klánstatisztikákat később lehet hiteles adatokkal vagy WoT API-integrációval feltölteni.</p></div></section>
+<section id="members"><div class="wrap"><div class="section-head"><small>Csapatunk</small><h2>Klántagok és rangok</h2></div><div class="members-grid">
+<div class="member"><div class="rank">★</div><h3>Parancsnok</h3><p>Játékosnév hozzáadása</p></div>
+<div class="member"><div class="rank">◆</div><h3>Tiszt</h3><p>Játékosnév hozzáadása</p></div>
+<div class="member"><div class="rank">▲</div><h3>Al tiszt</h3><p>Játékosnév hozzáadása</p></div>
+<div class="member"><div class="rank">⬡</div><h3>Klántag</h3><p>Játékosnév hozzáadása</p></div>
+</div><p class="notice">A tagnevek mintaszövegek, cseréld le őket a valódi játékosnevekre.</p></div></section>
+<section class="recruit" id="recruit"><div class="wrap recruit-grid"><div><div class="section-head"><small>Toborzás</small><h2>Csatlakozz a klánhoz!</h2></div><p>Aktív, csapatjátékos tankosokat keresünk, akik szívesen fejlődnek és egy jó közösség tagjai lennének.</p><ul class="checklist"><li>Csapatszellem és korrekt hozzáállás</li><li>Nyitottság a fejlődésre</li><li>EU szerveres World of Tanks-fiók</li><li>Részvétel a közös programokon, amikor tudsz</li></ul></div>
+<form class="form" id="applyForm"><div><label for="player">Játékosnév *</label><input id="player" name="player" required maxlength="50" placeholder="WoT játékosneved"></div>
+<div><label for="age">Életkor (opcionális)</label><input id="age" name="age" inputmode="numeric" placeholder="Pl. 20"></div>
+<div><label for="message">Üzenet *</label><textarea id="message" name="message" required maxlength="1000" placeholder="Írj pár sort magadról, tankjaidról és arról, miért csatlakoznál."></textarea></div>
+<button class="btn" type="submit">JELENTKEZÉS ELŐKÉSZÍTÉSE ↗</button><p class="form-note">A jelentkezés gomb egy e-mailt készít elő a saját leveleződben. Mielőtt élesíted, állítsd be a klán kapcsolattartójának e-mail-címét a kódban.</p><p class="form-note" id="formStatus" aria-live="polite"></p></form>
+</div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>⬡ MTZ — MAGYAR TANK ZÚZÓK</strong><br>World of Tanks • EU</div><div>Rajongói klánoldal. Nem hivatalos Wargaming-weboldal.</div><div>© <span id="year"></span> MTZ</div></div></footer>
+<script>
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');}));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('applyForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const contact='CSERELD_LE_A_KAPCSOLATTARTO_EMAIL_CIMRE';
+ if(contact==='CSERELD_LE_A_KAPCSOLATTARTO_EMAIL_CIMRE'){
+   document.getElementById('formStatus').textContent='A jelentkezési űrlap működik, de előbb állítsd be a kapcsolattartó e-mail-címét az index.html fájl JavaScript részében.';
+   return;
+ }
+ const d=new FormData(e.target);
+ const subject=encodeURIComponent('MTZ klán jelentkezés – '+d.get('player'));
+ const body=encodeURIComponent('Játékosnév: '+d.get('player')+'\nÉletkor: '+(d.get('age')||'nincs megadva')+'\n\nÜzenet:\n'+d.get('message'));
+ window.location.href='mailto:'+contact+'?subject='+subject+'&body='+body;
+});
+</script>
+</body></html>
